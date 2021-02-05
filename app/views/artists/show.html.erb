@@ -2,3 +2,10 @@
 
 <p> <%= @artists.title %> </p>
 <p> <%= @artists.age %> </p>
+
+<h2> Instruments </h2>
+<ol> 
+<% @artists.instruments.each do |instrument_inst| %>
+    <li> <%= instrument_inst.name %> </li>
+<% end %>
+</ol>
